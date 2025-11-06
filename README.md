@@ -13,10 +13,9 @@ By integrating **Python’s analytical power** with **Excel’s visualization ca
 ---
 
 ## 📘 Overview  
-The **IoMT Healthcare Monitoring and Security Dataset** represents real-world **Internet of Medical Things (IoMT)** environments where patient data is collected through interconnected medical sensors.  
-This project focuses on **predicting patient health status** and analyzing the physiological and behavioral factors contributing to health risk levels.  
+The **IoMT Healthcare Monitoring and Security Dataset** represents real-world **Internet of Medical Things (IoMT)** environments where patient data is collected through interconnected medical sensors.   
 
-It combines **Excel-based data analysis and dashboarding** with **Python-based machine learning modeling**, offering both analytical and visual insights into patient health dynamics.
+This project predicts patient health status and analyzes the vital signs and medical history contributing to different health risk levels. It combines Excel-based data analysis and dashboarding with Python-based machine learning to uncover key health indicators and predict risk categories such as Healthy, At Risk, and Critical.
 
 ---
 
