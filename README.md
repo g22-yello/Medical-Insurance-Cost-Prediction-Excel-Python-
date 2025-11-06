@@ -78,7 +78,7 @@ It combines **Excel-based data analysis and dashboarding** with **Python-based m
 - Implemented models: **Logistic Regression**, **Random Forest**, **SVM** and **XGBoost**.  
 - Evaluated with metrics such as **Accuracy**, **F1-score**, and **ROC-AUC**.  
 
-### 6️⃣ Built Onteractive user interface using Gradio 
+### 6️⃣ Built Interactive user interface using Gradio 
 
 ### 7️⃣ Excel Dashboard  
 - Imported cleaned dataset into Excel.  
