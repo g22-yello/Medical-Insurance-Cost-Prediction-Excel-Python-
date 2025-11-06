@@ -1,9 +1,5 @@
 # 🩺 IoMT Healthcare Risk Prediction (Excel + Python)
 
-Analyzed **IoMT healthcare data** to identify key factors influencing patient health risk levels using **Excel** and **Python**.  
-        - Performed data cleaning, EDA, and predictive modeling to classify patients as **Healthy**, **At Risk**, or **Critical** based on vital signs and medical history.  
-        - Developed an **interactive Excel dashboard** to visualize patient health distribution, vital trends, and KPI summaries.
-
 The project demonstrates how **data-driven IoMT analytics** can improve early risk detection and patient monitoring.  
 By integrating **Python’s analytical power** with **Excel’s visualization capabilities**, it bridges technical modeling with actionable business insights in healthcare informatics.
 
