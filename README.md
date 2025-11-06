@@ -75,7 +75,7 @@ It combines **Excel-based data analysis and dashboarding** with **Python-based m
 
 ### 5️⃣ Model Development  
 - Split data into training and test sets.  
-- Implemented models: **Logistic Regression**, **Random Forest**, **SVM** and **XGBoost**.  
+- Implemented models: **Logistic Regression**, **Decision Tree**, **SVM** and **Gradient Boost**.  
 - Evaluated with metrics such as **Accuracy**, **F1-score**, and **ROC-AUC**.  
 
 ### 6️⃣ Built Interactive user interface using Gradio 
@@ -115,6 +115,7 @@ It combines **Excel-based data analysis and dashboarding** with **Python-based m
 - **Medication Usage:** Regular or high medication dependency correlates with higher risk.  
 - **Age:** Patients above 60 show greater chances of being “At Risk” or “Critical”.
 - **Vital Abnormality** is a key factor in predicting the health status of a patient
+- 🏆 Best performing model was **Gradient Boosting** model with Train Accuracy: 0.9547 and Test Accuracy: 0.9328
 
 **Final Insight:**  
 The combined **Excel + Python workflow** effectively identifies patient health risks and supports **data-driven preventive healthcare** through IoMT analytics.
