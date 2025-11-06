@@ -4,6 +4,9 @@ Analyzed **IoMT healthcare data** to identify key factors influencing patient he
 Performed data cleaning, EDA, and predictive modeling to classify patients as **Healthy**, **At Risk**, or **Critical** based on vital signs and medical history.  
 Developed an **interactive Excel dashboard** to visualize patient health distribution, vital trends, and KPI summaries.
 
+The project demonstrates how **data-driven IoMT analytics** can improve early risk detection and patient monitoring.  
+By integrating **Python’s analytical power** with **Excel’s visualization capabilities**, it bridges technical modeling with actionable business insights in healthcare informatics.
+
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Excel](https://img.shields.io/badge/Excel-Dashboard-green?logo=microsoftexcel)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Modeling-orange?logo=scikitlearn)
@@ -23,7 +26,7 @@ It combines **Excel-based data analysis and dashboarding** with **Python-based m
 
 ## 📊 Dataset  
 
-- **Source:** IoMT Healthcare Monitoring and Security Dataset  
+- **Source:** IoMT Healthcare Monitoring and Security Dataset - https://www.kaggle.com/datasets/zyan1999/iomt-healthcare-monitoring-and-security-dataset  
 - **Records:** 2,500 patient entries  
 - **Objective:** Classify patients as **Healthy**, **At Risk**, or **Critical** based on vital signs, medical history, and treatment patterns.  
 
@@ -49,7 +52,7 @@ It combines **Excel-based data analysis and dashboarding** with **Python-based m
 | Category | Tools Used |
 |-----------|-------------|
 | **Programming Language** | Python |
-| **Libraries** | pandas, numpy, matplotlib, seaborn, scikit-learn |
+| **Libraries** | pandas, numpy, matplotlib, seaborn, scikit-learn | Gradio for interactive interface
 | **Visualization & Dashboard** | Microsoft Excel |
 | **Presentation** | Microsoft PowerPoint |
 | **IDE** | Jupyter Notebook / Google Colab |
@@ -59,7 +62,6 @@ It combines **Excel-based data analysis and dashboarding** with **Python-based m
 ## 🔍 Project Workflow  
 
 ### 1️⃣ Data Importing  
-- Imported dataset using `pandas`.  
 - Reviewed structure, data types, and missing values.  
 
 ### 2️⃣ Data Preprocessing  
@@ -69,89 +71,56 @@ It combines **Excel-based data analysis and dashboarding** with **Python-based m
 - Encoded categorical columns and normalized numeric features.  
 
 ### 3️⃣ Exploratory Data Analysis (EDA)  
-- Performed descriptive analysis and statistical summaries in **Excel**.  
-- Created pivot tables to compare vitals across health categories.  
-- Used charts (bar, box, line) to analyze vital sign distribution.  
-- Identified key indicators influencing health risk.  
+- Conducted descriptive and statistical analysis to compare vitals and identify key health risk indicators.
 
 ### 4️⃣ Feature Engineering & Selection  
-- Selected relevant variables using correlation analysis.  
-- Created derived metrics (e.g., BP ratio, abnormality index).  
+- Selected relevant variables
 - Removed redundant or non-informative fields.  
 
 ### 5️⃣ Model Development  
 - Split data into training and test sets.  
-- Implemented models: **Logistic Regression**, **Random Forest**, and **XGBoost**.  
+- Implemented models: **Logistic Regression**, **Random Forest**, **SVM** and **XGBoost**.  
 - Evaluated with metrics such as **Accuracy**, **F1-score**, and **ROC-AUC**.  
 
-### 6️⃣ Hyperparameter Tuning  
-- Optimized model performance using **RandomizedSearchCV**.  
-- Finalized the model with the best generalization score.  
+### 6️⃣ Built Onteractive user interface using Gradio 
 
 ### 7️⃣ Excel Dashboard  
 - Imported cleaned dataset into Excel.  
-- Designed an **interactive dashboard** featuring:  
-  - Patient distribution by health status  
-  - KPI cards for key vitals (BP, Glucose, SpO₂, Temp, BPM)  
-  - Health risk trends by age and medication usage  
-  - Conditional formatting for visual risk alerts  
+- Designed an **interactive dashboard** using pivot tables and charts 
 - Integrated slicers for dynamic filtering (by status, diagnosis, medication, etc.).  
 
 ---
 
 ## 📈 Results & Insights  
 
+![](Feature_imp.png)
+
 - Achieved **high prediction accuracy** for health risk classification.  
-- **Top predictive factors:** Blood Pressure, Oxygen Saturation, and Blood Glucose.  
-- **Age and medication** strongly influence overall patient risk.  
+- **Top 3 predictive factors:** Vital Abnormality signs, body temperature, Blood Glucose levels followed by  Oxygen Saturation, and Blood pressure 
+- Body temperature, oxygen saturation, and glucose levels were the strongest predictors of patient risk:
+    - Critical patients typically showed high body temperature, low oxygen saturation (<92%), and elevated glucose levels.
+    - Most at-risk and critical patients were in the 21–80 age range.
 - The Excel dashboard provides **instant visual insights** for identifying high-risk patients and abnormal vitals.
+  
 
 ---
 
 ## 📊 Excel Dashboard Preview   
-![Dashboard Screenshot](dashboard1.jpg)
-![Dashboard Screenshot](dashboard2.jpg)
-![Dashboard Screenshot](dashboard3.jpg)
+![Dashboard Screenshot](Dashboard.png)
 
 ---
 
 ## 🚀 Key Insights  
 
 - **Blood Pressure:** Patients with elevated BP show higher risk categories.  
-- **Oxygen Saturation:** Levels <94% indicate potential critical conditions.  
+- **Oxygen Saturation:** Levels <92% indicate potential critical conditions.  
 - **Temperature:** Fever (>38°C) or low body temp (<36°C) correspond with poor health status.  
 - **Blood Glucose:** Readings above 180 mg/dL are common in “Critical” category.  
 - **Medication Usage:** Regular or high medication dependency correlates with higher risk.  
-- **Age:** Patients above 60 show greater chances of being “At Risk” or “Critical”.  
+- **Age:** Patients above 60 show greater chances of being “At Risk” or “Critical”.
+- **Vital Abnormality** is a key factor in predicting the health status of a patient
 
 **Final Insight:**  
 The combined **Excel + Python workflow** effectively identifies patient health risks and supports **data-driven preventive healthcare** through IoMT analytics.
 
----
 
-## 🧩 Project Highlights  
-
-- End-to-end data analytics workflow (Excel + Python)  
-- Machine learning classification for health risk prediction  
-- Interactive Excel dashboard for patient monitoring  
-- Actionable insights for healthcare analytics and IoMT research  
-
----
-
-## 📄 Files Included  
-
-| File | Description |
-|------|--------------|
-| `IoMT_Healthcare_Risk_Prediction.ipynb` | Jupyter Notebook containing data preprocessing, EDA, and modeling |
-| `IoMT_Healthcare_Data.xlsx` | Cleaned and processed dataset |
-| `IoMT_Healthcare_Dashboard.xlsx` | Excel dashboard with slicers and KPIs |
-| `Capstone_Presentation.pptx` | Final project presentation |
-
----
-
-## 🏁 Conclusion  
-
-The project demonstrates how **data-driven IoMT analytics** can improve early risk detection and patient monitoring.  
-By integrating **Python’s analytical power** with **Excel’s visualization capabilities**, it bridges technical modeling with actionable business insights in healthcare informatics.
-
----
